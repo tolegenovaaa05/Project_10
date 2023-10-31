@@ -154,10 +154,11 @@ class GamesScreen extends StatelessWidget {
 class UserScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Это страница "Аккаунт"',
-            style: TextStyle(color: Colors.black, fontSize: 24.0)),
+    return MaterialApp(
+      home:Scaffold(
+      body: Center(
+        child: Image.asset('assets/My_App.png')
+      ),  
       ),
     );
   }
